@@ -7,6 +7,11 @@ git clone https://github.com/Sippee/CSB-project1
 
 Make python virtual environment
 ```bash
+cd CSB-project1
+```
+
+Make python virtual environment
+```bash
 python3 -m venv venv
 ```
 

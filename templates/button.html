@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Check CSRF</h2>
+    <form method="post">
+        <input type="hidden" name="csrf_token" value="{{ session.csrf_token }}">
+        <button type="submit">Button</button>
+    </form>
+    <p style="color:red;">{{ message }}</p>
+</html>
+{% endblock %}

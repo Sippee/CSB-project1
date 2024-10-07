@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if session.id %}
+<h2>Logged in as {{ session.username }}.</h2>
+<a href="/button">Check CSRF
+<br>
+</a>
+<a href="/logout">Logout</a>
+{% else %}
+<a href="/login">Login</a>
+{% endif %}
+{% if session.role == "admin" %}
+<br>
+<br>
+<a href="/admin">Admin Panel</a>
+{% endif %}
+<p style="color:red;">{{ message }}</p>
+{% endblock %}

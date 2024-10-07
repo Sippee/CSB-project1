@@ -5,7 +5,7 @@ Clone the repository
 git clone https://github.com/Sippee/CSB-project1
 ```
 
-Make python virtual environment
+Move to the project folder
 ```bash
 cd CSB-project1
 ```

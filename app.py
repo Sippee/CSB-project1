@@ -5,7 +5,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
 
 app = Flask(__name__)
-app.secret_key = "1234" #getenv("SECRET_KEY") # Sensitive data exposure?
+app.secret_key = "1234"                # Sensitive data exposure
+#app.secret_key = getenv("SECRET_KEY") # Uncomment this line and comment the line above
 
 def get_db_connection():
     conn = sqlite3.connect('data.db')

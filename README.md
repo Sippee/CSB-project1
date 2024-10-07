@@ -29,6 +29,11 @@ Install depencies
 pip install -r requirements.txt
 ```
 
+Initialize the database
+```bash
+python3 initialize_database.py
+```
+
 Run the app. The app will run on http://127.0.0.1:5000/
 ```bash
 flask run

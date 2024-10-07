@@ -7,6 +7,7 @@ from functools import wraps
 app = Flask(__name__)
 app.secret_key = "1234"                # Sensitive data exposure
 #app.secret_key = getenv("SECRET_KEY") # Uncomment this line and comment the line above
+# AND CREATE A FILE .env into the folder and add SECRET_KEY = "" and some kind of random value like os.urandom(16).hex()
 
 def get_db_connection():
     conn = sqlite3.connect('data.db')
